@@ -1,0 +1,403 @@
+/* Custom Styles for the Preloader */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+@media (max-width: 767.98px) { /* Targeting screens smaller than 768px */
+    .navbar {
+      background-color: white !important; /* Set navbar background to white */
+    }
+  }
+
+.wrapper {
+    flex: 1;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-content {
+    text-align: center;
+}
+
+/* Custom Styles for the Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #92bef0;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-content form label {
+    font-size: medium;
+    float: left;
+    color: #fff;
+    font-weight: 300px;
+}
+
+.home-section {
+    padding: 50px 0; 
+  }
+
+  @keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.courses-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.course{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.animated-image {
+    animation: slideIn 3s ease-in-out;
+    border-radius: 50px 0 50px 0;
+    width: 500px;
+    height: 300px;
+}
+
+.animate__animated.animate__fadeInUp {
+  animation-duration: 3s; /* Set your desired duration */
+}
+
+.courses-head{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e2022d;
+    font-weight: bold;
+}
+
+
+.medical{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 150px;
+    background-color: #114092;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.contact-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.contact-icons a {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #25d366;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-icons a.phone {
+    background-color: #34b7f1; 
+}
+
+.contact-icons a.instagram {
+    background-color: #e4405f; 
+}
+
+.contact-icons a.youtube {
+    background-color: #c4302b;
+}
+
+.contact-icons a:hover {
+    background-color: #128C7E; 
+}
+
+.contact-icons a.phone:hover {
+    background-color: #007bff;
+}
+
+.contact-icons a.instagram:hover {
+    background-color: #e1306c; 
+}
+
+.contact-icons a.youtube:hover {
+    background-color: #ff0000;
+}
+
+.custom-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Change the color as needed */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.index-footer{
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.index-footer p{
+    color: #114092;
+}
+
+.medical a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.medical:hover{
+    background-color: #e2022d;
+}
+
+.medical a:hover {
+    /* Apply 3D scale effect on hover */
+    transform: scale(1.1);
+}
+
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about h1{
+    color: #114092;
+}
+
+.about-us{
+    width: 70%;
+    background-color: #e2022d;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: about-usslideIn 2s ease-out;
+}
+
+@keyframes about-usslideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.vision{
+    background-color: #114092;
+    width: 70%;
+    float: right;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: vision-slideInFromRight 2s ease-out;
+}
+
+@keyframes vision-slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-aim{
+    background-color: #e2022d;
+    width: 70%;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: aim-slideIn 2s ease-out;
+}
+
+@keyframes aim-slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-mission{
+    background-color: #114092;
+    width: 70%;
+    color: white;
+    float: right;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: vision-slideInFromRight 2s ease-out;
+}
+.colleges-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.college-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    width: 400px;
+    height: 250px;
+    border: #e2022d solid 5px;
+    border-radius: 20px;
+}
+
+.college-img{
+    width: 100%;
+    height: 200px
+}
+
+.college-info p{
+    font-size: large;
+}
+
+.manglore-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    width: 400px;
+    height: 250px;
+    border: #114092 solid 5px;
+    border-radius: 20px;
+}
+
+.north-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 400px;
+    height: 250px;
+    color: #e2022d;
+    border: #114092 solid 5px;
+    border-radius: 20px;
+}
+
+.team-members{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.members img{
+    height: 180px;
+    width: 180px;
+
+}
+
+.apply-btn{
+    height: 25px;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 7px;
+    animation: glow-btn 2s infinite;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@keyframes glow-btn{
+    0%{
+        box-shadow: 0 0 10px 0px #114092;
+        background-color: #114092;
+    }
+    50%{
+        box-shadow: 0 0 20px 10px #e2022d;
+        background-color: #e2022d;
+    }
+    100%{
+        box-shadow: 0 0 10px 0px #114092;
+        background-color: #114092;
+    }
+}
+
+.apply-btn:hover{
+    background-color: #e2022d;
+    color: white;
+    text-decoration: none;
+}
